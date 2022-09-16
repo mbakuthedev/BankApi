@@ -60,3 +60,8 @@ C:\Users\user\source\repos\BankApi\BankApi\obj\Debug\netcoreapp3.1\BankApi.cspro
 C:\Users\user\source\repos\BankApi\BankApi\obj\Debug\netcoreapp3.1\BankApi.dll
 C:\Users\user\source\repos\BankApi\BankApi\obj\Debug\netcoreapp3.1\BankApi.pdb
 C:\Users\user\source\repos\BankApi\BankApi\obj\Debug\netcoreapp3.1\BankApi.genruntimeconfig.cache
+C:\Users\user\source\repos\BankApi\BankApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\user\source\repos\BankApi\BankApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user\source\repos\BankApi\BankApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user\source\repos\BankApi\BankApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user\source\repos\BankApi\BankApi\obj\Debug\netcoreapp3.1\BankApi.MvcApplicationPartsAssemblyInfo.cs

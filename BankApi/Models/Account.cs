@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace BankApi.Models
@@ -13,8 +14,8 @@ namespace BankApi.Models
         Random rand = new Random();
         public Account()
         {
-            AccountNumberGenerated = Convert.ToString((long)rand.NextDouble() * 9_000_000_000L + 1_000_000_000L);
-            AccountName = $"{FirstName} {LastName}";
+            AccountNumberGenerated = Convert.ToString((long)Math.Floor(rand.NextDouble() * 9_000_000_000L + 1_000_000_000L));
+            AccountName = $"{FirstName}  {LastName}";
         }
         [Key]
         public int Id { get; set; }
@@ -26,7 +27,9 @@ namespace BankApi.Models
         public decimal CurrentAccountBalance { get; set; }
         public AccountType AccountType { get; set; }
         public string AccountNumberGenerated { get; set; }
+        [JsonIgnore]
         public byte[] PinHash { get; set; }
+        [JsonIgnore]
         public byte[] PinSalt { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateLastUpdated { get; set; }
