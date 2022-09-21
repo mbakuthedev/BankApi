@@ -15,7 +15,7 @@ namespace BankApi.Models
         public Account()
         {
             AccountNumberGenerated = Convert.ToString((long)Math.Floor(rand.NextDouble() * 9_000_000_000L + 1_000_000_000L));
-            AccountName = $"{FirstName}  {LastName}";
+            AccountName = $"{FirstName + LastName}";
         }
         [Key]
         public int Id { get; set; }

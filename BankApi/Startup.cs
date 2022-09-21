@@ -1,6 +1,7 @@
 using BankApi.Models;
 using BankApi.Services;
 using BankApi.Services.Classes;
+using BankApi.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +32,7 @@ namespace BankApi
         {
             services.AddDbContext<BankDbContext>(x => x.UseSqlServer(Configuration.GetConnectionString("BankCS")));
             services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<ITransactionService, TransactionService>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddSwaggerGen(x => {
                 x.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo
