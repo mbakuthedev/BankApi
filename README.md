@@ -1,5 +1,3 @@
-# BankApi
- 
 # OVERVIEW
 It's basically an API that allows a transaction and gives response codes when the transactions fail on the client side and on the Banks side it allows the bank search Accounts transactions by account number , account name and even the type of account 
 # BANK
