@@ -22,3 +22,5 @@ Then going on to the Transaction model
 That's what facilities all transactions and in the model , we have properties which are The Destination Account , the Source Account , the Transaction type , Transaction date, Transaction Status and even a Transaction Unique reference which was instantiated to be a guid 
 And then there's the Transaction Request Dto which is also a model that allows the Users to search for their transactions ( more like a transaction history) 
 Then the last model will be an Update model that is accessible to the Users and allows them change their pins, phone numbers and emails 
+#HOW TO
+Switch to master branch
